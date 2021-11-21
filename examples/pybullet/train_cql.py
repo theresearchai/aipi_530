@@ -26,7 +26,7 @@ def main(args):
 
     cql.fit(train_episodes,
             eval_episodes=test_episodes,
-            n_epochs=100,
+            n_epochs=1,
             scorers={
                 'environment': evaluate_on_environment(env),
                 'td_error': td_error_scorer,
